@@ -8,7 +8,7 @@ const DisplayEtud = () => {
   const dispatch = useDispatch();
   const [etud, setEtud] = useState({ id: "", Nom: "", Filière: "" });
 
-  const handleInputs = () => {
+  const handleInputs = (event) => {
     const { name, value } = event.target;
     setEtud({ ...etud, [name]: value });
   };
